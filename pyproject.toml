@@ -1,0 +1,22 @@
+[project]
+name = "stormsight"
+version = "0.1.0"
+description = "Weather analysis and storm prediction agent (LangChain Deep Agents + Streamlit)"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40",
+    "deepagents>=0.2",
+    "langchain>=1.0",
+    "langchain-google-genai>=3.0",
+    "requests>=2.32",
+    "fpdf2>=2.8",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
